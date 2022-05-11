@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
-
-$primary-color: #ed6fab;
+// @import url("../fonts/GTWalsheimPro/stylesheet.css");
+@import url(//db.onlinewebfonts.com/c/0abeb2471faeb5269db428b9eac2075e?family=GT+Walsheim+Pro+Regular);
+$primary-color: #3e94fe;
 $secondary-color: #495057;
-$text-color: #e9ecef;
-$mobile: 1440px;
+$text-color: rgba(18, 23, 30, 0.654531);
+$desktop-view: 1440px;
 $mobile-view: 500px;
 @mixin mobile {
   @media (max-width: $mobile-view) {
@@ -16,7 +17,7 @@ $mobile-view: 500px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Quicksand";
+  font-family: "GT Walsheim Pro Regular", serif;
   // color: blue;
 }
 html {
