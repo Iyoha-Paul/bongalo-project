@@ -19,20 +19,20 @@ body {
   border: none;
   color: white;
   background-color: $primary-color;
-  height: 3.5rem;
-  border-radius: 5px;
-  padding: 2rem 2.4rem;
+  // height: 3.5rem;
+  border-radius: 15px;
+  padding: 2rem 6rem;
   @include Flebo-parallel;
 
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
   font-weight: 500;
 }
 .container {
   max-width: $desktop-view;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
-.home {
+.hero {
   background-color: aliceblue;
   padding-top: 4rem;
   h1 {
@@ -52,6 +52,7 @@ body {
     gap: 2.4rem;
     p {
       font-size: 3.6rem;
+      color: white;
     }
     &__logo {
       height: 7.8rem;
@@ -73,15 +74,17 @@ body {
       padding: 0.1rem 0.1rem;
       .link {
         text-decoration: none;
+        color: white;
       }
     }
   }
   .btn--login {
     text-decoration: none;
+    cursor: pointer;
     margin-left: 5.8rem;
     padding: 2rem 4rem;
-    background-color: beige;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 15px;
     color: #3e94fe;
   }
 }
@@ -92,8 +95,10 @@ body {
     margin-bottom: 3.6rem;
     position: relative;
     h1 {
-      max-width: 99.2rem;
+      max-width: 96rem;
       margin: 0 auto;
+      margin-bottom: 8rem;
+      color: white;
       text-align: center;
       span {
         color: #2b6bb9;
@@ -102,6 +107,7 @@ body {
     &__btn {
       @include Flebo-parallel;
       height: 7rem;
+      cursor: pointer;
       width: 7rem;
       border-radius: 50%;
       border: 1px solid rgba(255, 255, 255, 0.5);
@@ -124,8 +130,10 @@ body {
   &__btn {
     position: relative;
     @include Flebo-parallel;
+    cursor: pointer;
     height: 7rem;
     width: 7rem;
+
     border-radius: 50%;
     // border: 1px solid rgba(255, 255, 255, 0.5);
     border: 1px solid rgb(255, 4, 4);
@@ -150,14 +158,48 @@ body {
   }
 }
 .hero__footer {
+  box-shadow: 0px 50px 100px 0px #3e94fe26;
+
+  width: $desktop-view;
   position: absolute;
   bottom: 0;
   right: 50%;
   transform: translate(50%, 50%);
   padding: 4rem 6rem;
   background-color: #fff;
-  form {
+  .form {
     display: flex;
-    gap: 16rem;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+      .icon {
+        margin-bottom: 2rem;
+      }
+      &__option {
+        margin-bottom: 3rem;
+        font-size: 2.6rem;
+        font-weight: bolder;
+        color: #000000;
+      }
+      &__select {
+        width: 24rem;
+        border: none;
+        color: #12171ea7;
+        font-size: 2rem;
+        border-bottom: solid 1px rgba(18, 23, 30, 0.6545);
+        padding-bottom: 1rem;
+      }
+    }
+  }
+  .btn {
+    @include btn;
+    font-size: 2.5rem;
+  }
+}
+.featured-cities {
+  margin-top: 20rem;
+  &__cities {
+    .images {
+    }
   }
 }

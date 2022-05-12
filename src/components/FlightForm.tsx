@@ -11,7 +11,11 @@ const FlightForm = () => {
             <img src={Location} alt="image" className="icon" />
             <div className="form__item__option"> Destination</div>
           </label>
-          <select name="dropdown" className="form" value="Kigali, Rawanda">
+          <select
+            name="dropdown"
+            className="form__item__select"
+            value="Kigali, Rawanda"
+          >
             <option value="">Kigali, Rawanda</option>
           </select>
         </div>
@@ -22,7 +26,7 @@ const FlightForm = () => {
           </label>
           <select
             name="dropdown"
-            className="form"
+            className="form__item__select"
             value="Wed, Oct 1 - Tue, Dec 10"
           >
             <option value="">Wed, Oct 1 - Tue, Dec 10</option>
@@ -33,7 +37,11 @@ const FlightForm = () => {
             <img src={Guest} alt="image" className="icon" />
             <div className="form__item__option"> Guest</div>
           </label>
-          <select name="dropdown" className="form" value="5 Guest">
+          <select
+            name="dropdown"
+            className="form__item__select"
+            value="5 Guest"
+          >
             <option value="">5 Guest</option>
           </select>
         </div>

@@ -1,12 +1,16 @@
 import React from "react";
+import FeaturedCities from "../components/FeaturedCities";
 import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <div className="home">
-      <div className=" container">
+      <section className=" ">
         <Hero />
-      </div>
+      </section>
+      <section>
+        <FeaturedCities />
+      </section>
     </div>
   );
 };
