@@ -2,10 +2,21 @@ import React from "react";
 import * as BsIcon from "react-icons/bs";
 import FlightForm from "./FlightForm";
 import Navigation from "./Navigation";
-
+import HeroImg from "../img/HeroImg.png";
+import { IconContext } from "react-icons";
 const hero = () => {
   return (
-    <div className="hero">
+    <div
+      className="hero"
+      style={{
+        background: `linear-gradient(
+         rgba(30, 40, 52, 0.7),
+        rgba(18, 23, 30, 0.4582),
+        rgba(255, 255, 255, 0.007)
+           ),url(${HeroImg})   no-repeat center / cover`,
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="container">
         {" "}
         <Navigation />
@@ -15,16 +26,16 @@ const hero = () => {
             to stay.
           </h1>
           <button className="hero__header__btn hero__header__btn--right">
-            <BsIcon.BsChevronRight />
+            <i className="fa-solid fa-chevron-right"></i>
           </button>
           <button className="hero__header__btn hero__header__btn--left">
-            <BsIcon.BsChevronLeft />
+            <i className="fa-solid fa-chevron-left"></i>
           </button>
         </div>
         <button className="hero__btn hero__header__btn--down">
           <div>
             <div className="hero__btn__design"> &nbsp; </div>
-            <BsIcon.BsChevronDown />
+            <i className="fa-solid fa-chevron-down"></i>
           </div>
         </button>
         <FlightForm />

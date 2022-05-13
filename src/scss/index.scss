@@ -13,6 +13,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+section {
+  margin-bottom: 8rem;
+}
 @mixin btn {
   cursor: pointer;
   text-decoration: none;
@@ -20,7 +23,7 @@ body {
   color: white;
   background-color: $primary-color;
   // height: 3.5rem;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 2rem 6rem;
   @include Flebo-parallel;
 
@@ -30,7 +33,7 @@ body {
 .container {
   max-width: $desktop-view;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 0 7rem;
 }
 .hero {
   background-color: aliceblue;
@@ -91,9 +94,20 @@ body {
 .hero {
   position: relative;
   padding-bottom: 24rem;
+  .fa-chevron-down {
+    height: 1em;
+    width: 4rem;
+    color: white;
+  }
   &__header {
     margin-bottom: 3.6rem;
     position: relative;
+    .fa-chevron-right,
+    .fa-chevron-left {
+      width: 1em;
+      height: 3rem;
+      color: white;
+    }
     h1 {
       max-width: 96rem;
       margin: 0 auto;
@@ -101,7 +115,7 @@ body {
       color: white;
       text-align: center;
       span {
-        color: #2b6bb9;
+        color: $primary-color;
       }
     }
     &__btn {
@@ -111,7 +125,7 @@ body {
       width: 7rem;
       border-radius: 50%;
       border: 1px solid rgba(255, 255, 255, 0.5);
-      border: 1px solid rgb(255, 4, 4);
+      // border: 1px solid rgb(255, 4, 4);
       background-color: rgba(255, 255, 255, 0.03);
       &--right {
         position: absolute;
@@ -133,21 +147,20 @@ body {
     cursor: pointer;
     height: 7rem;
     width: 7rem;
-
     border-radius: 50%;
     // border: 1px solid rgba(255, 255, 255, 0.5);
-    border: 1px solid rgb(255, 4, 4);
+    border: none;
     background-color: rgba(255, 255, 255, 0.03);
 
-    background-color: #3e94fe;
+    background-color: rgba(62, 148, 254, 1);
     margin: 0 auto;
     &__design {
       @include Flebo-parallel;
-      height: 10rem;
-      width: 10rem;
+      height: 9.6rem;
+      width: 9.6rem;
       border-radius: 50%;
-      // border: 1px solid rgba(255, 255, 255, 0.5);
-      border: 1px solid rgb(255, 4, 4);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      // border: 1px solid rgb(255, 4, 4);
       background-color: rgba(255, 255, 255, 0.03);
 
       position: absolute;
@@ -160,7 +173,7 @@ body {
 .hero__footer {
   box-shadow: 0px 50px 100px 0px #3e94fe26;
 
-  width: $desktop-view;
+  width: 130.2rem;
   position: absolute;
   bottom: 0;
   right: 50%;
@@ -170,6 +183,8 @@ body {
   .form {
     display: flex;
     align-items: center;
+    // gap: 9rem;
+
     justify-content: space-between;
     &__item {
       .icon {
@@ -197,9 +212,193 @@ body {
   }
 }
 .featured-cities {
-  margin-top: 20rem;
+  margin-top: 24rem;
+  h2 {
+    margin-bottom: 4rem;
+  }
   &__cities {
-    .images {
+    &--col {
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-between;
+      // height: 34.8rem;
+
+      .img-container {
+        position: relative;
+        height: 34.8rem;
+        // z-index: 11;
+        &__design {
+          border-radius: 5px;
+          background: radial-gradient(
+            50% 50% at 50% 50%,
+            rgba(18, 23, 30, 0.654531) 0%,
+            rgba(62, 148, 254, 0.22) 100%
+          );
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          right: 0;
+          top: 0;
+          // transform: translate(50%, 50%);
+        }
+
+        &__description {
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          transform: translate(50%, -50%);
+          // z-index: 11;
+          h3 {
+            font-size: 6rem;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 400;
+          }
+          p {
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
     }
+  }
+}
+
+.featured-places {
+  // margin-bottom: 8rem;
+  // margin-top: 7rem;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+  .featured-place {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      transform: translate(50%, 0%);
+      border: 1px solid rgba(62, 148, 254, 0.2);
+      top: 30%;
+      @extend .hero__header__btn;
+      background-color: #fff;
+      .fa-chevron-right {
+        color: $primary-color;
+        height: 3rem;
+        width: 1rem;
+      }
+    }
+    .placecard {
+      &__image {
+        margin-bottom: 2rem;
+      }
+      &__description {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        h4 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+        &__price {
+          font-size: 1.6rem;
+          font-weight: 400;
+          span {
+            font-size: 1.2rem;
+            color: rgb(107, 107, 107);
+          }
+        }
+      }
+      &__details {
+        display: flex;
+        flex-direction: column;
+        // gap: 1rem;
+        h4 {
+          font-size: 1.6rem;
+          color: rgb(107, 107, 107);
+          font-weight: 400;
+          margin-bottom: 0.8rem;
+        }
+        &__amenities {
+          @include Flebo-parallel;
+          gap: 2rem;
+          .bed,
+          .shower {
+            color: rgb(107, 107, 107);
+            @include Flebo-parallel;
+            gap: 0.6rem;
+            &__no {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.experiences {
+  h2 {
+    margin-bottom: 3.4rem;
+  }
+  .experience {
+    @include Flebo-parallel;
+    justify-content: space-between;
+    &__card {
+      display: flex;
+      gap: 1.3rem;
+      flex-direction: column;
+    }
+    &__image {
+      margin-bottom: 0.4rem;
+    }
+    &__details {
+      h4 {
+        font-size: 2rem;
+      }
+      &__location {
+        @include Flebo-parallel;
+        gap: 0.5rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 1.6rem;
+        color: rgb(107, 107, 107);
+      }
+    }
+  }
+}
+.features {
+  box-shadow: 0px 30px 60px 0px rgba(62, 148, 254, 0.2);
+
+  border-radius: 5px;
+  background-color: $primary-color;
+  padding: 7rem 6rem;
+  @include Flebo-parallel;
+  justify-content: space-between;
+  gap: 21rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  h4 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .feature {
+    display: flex;
+    gap: 1.7rem;
+    flex-direction: column;
+    font-size: 1.7rem;
+    // line-height: 2rem;
+    // max-width: rem;
+  }
+}
+.support {
+  margin-top: 10rem;
+  h3 {
+    font-size: 4.8rem;
+    text-align: center;
+  }
+  &__companies {
+    margin-top: 3rem;
+    @include Flebo-parallel;
+    justify-content: space-between;
   }
 }
