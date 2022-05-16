@@ -2,6 +2,7 @@ import React from "react";
 import Experiences from "../components/Experiences";
 import FeaturedCities from "../components/FeaturedCities";
 import FeaturedPlaces from "../components/FeaturedPlaces";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import OurFeatures from "../components/OurFeatures";
 import Support from "../components/Support";
@@ -27,6 +28,9 @@ const Home = () => {
       <section>
         <Support />
       </section>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

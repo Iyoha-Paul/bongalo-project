@@ -25,28 +25,28 @@ const Navigation = () => {
         </button>
         <ul className={sidebar ? "nav__links active" : "nav__links"}>
           <li>
-            <NavLink className="link" to="/home">
+            <NavLink className="link" to="/">
               Home
             </NavLink>
           </li>
           <li className="link">
-            <NavLink to="/home" className="link">
+            <NavLink to="/" className="link">
               List a property
             </NavLink>
           </li>
           <li className="link">
-            <NavLink to="/home" className="link">
+            <NavLink to="/" className="link">
               Blog
             </NavLink>
           </li>
           <li className="link">
-            <NavLink to="/home" className="link">
+            <NavLink to="/" className="link">
               FAQs
             </NavLink>
           </li>
         </ul>
         <div>
-          <NavLink to="/home" className="btn--login">
+          <NavLink to="/" className="btn--login">
             Login
           </NavLink>
         </div>

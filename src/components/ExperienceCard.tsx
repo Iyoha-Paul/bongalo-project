@@ -30,6 +30,9 @@ const ExperienceCard = () => {
   ];
   return (
     <div className="experience">
+      <button className="btn ">
+        <i className="fa-solid fa-chevron-right"></i>
+      </button>
       {experiences.map((experience) => (
         <div className="experience__card">
           <img

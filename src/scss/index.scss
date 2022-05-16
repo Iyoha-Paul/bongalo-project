@@ -13,7 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-section {
+section,
+footer {
   margin-bottom: 8rem;
 }
 @mixin btn {
@@ -341,8 +342,26 @@ section {
     margin-bottom: 3.4rem;
   }
   .experience {
+    position: relative;
+
     @include Flebo-parallel;
     justify-content: space-between;
+    .btn {
+      border: 1px solid rgba(62, 148, 254, 0.2);
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      transform: translate(50%, 0%);
+      border: 1px solid rgba(62, 148, 254, 0.2);
+      top: 30%;
+      @extend .hero__header__btn;
+      background-color: #fff;
+      .fa-chevron-right {
+        color: $primary-color;
+        height: 3rem;
+        width: 1rem;
+      }
+    }
     &__card {
       display: flex;
       gap: 1.3rem;
@@ -397,8 +416,141 @@ section {
     text-align: center;
   }
   &__companies {
+    margin: 0 13.5rem;
     margin-top: 3rem;
     @include Flebo-parallel;
     justify-content: space-between;
+  }
+}
+.footer {
+  background-color: rgba(62, 148, 254, 0.3);
+  padding: 7.1rem 0;
+  &__subscribe {
+    margin-bottom: 15rem;
+
+    @include Flebo-parallel;
+    justify-content: flex-start;
+    gap: 11rem;
+    &__name {
+      @include Flebo-parallel;
+      justify-content: flex-start;
+      gap: 2.4rem;
+      h4 {
+        font-size: 3.6rem;
+        color: rgba(18, 23, 30, 0.6545);
+      }
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      label {
+        font-size: 2.4rem;
+        color: rgba(18, 23, 30, 0.6545);
+      }
+      &__input {
+        margin-top: 2rem;
+        // position: relative;
+        &__email {
+          @include Flebo-parallel;
+          gap: 0.8rem;
+          &__input-container {
+            position: relative;
+
+            &__input {
+              width: 52rem;
+              padding: 1.9rem 5.6rem;
+              font-size: 1.8rem;
+              border: none;
+              border-radius: 0.9rem;
+            }
+            .fa-envelope {
+              color: rgba(62, 148, 254, 0.5);
+              position: absolute;
+              top: 50%;
+              left: 0%;
+              transform: translate(50%, -50%);
+            }
+          }
+          &__btn {
+            @include btn;
+            font-size: 2.4rem;
+            padding: 1.4rem 1.7rem;
+          }
+        }
+      }
+    }
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1.5fr;
+    // padding-right: 30rem;
+    justify-content: space-between;
+    column-gap: 5rem;
+    &__section {
+      font-size: 2rem;
+      &--media {
+        justify-self: center;
+      }
+      h5 {
+        color: rgba(18, 23, 30, 0.897);
+        margin-bottom: 3rem;
+      }
+      &__social-media {
+        @include Flebo-parallel;
+        gap: 2.6rem;
+
+        a {
+          color: $primary-color;
+
+          text-decoration: none;
+          .fa-youtube {
+            cursor: pointer;
+            width: 3rem;
+            height: 2.2rem;
+            &:hover {
+              color: #c4302b;
+            }
+          }
+          .fa-twitter {
+            cursor: pointer;
+            width: 3rem;
+            height: 2.2rem;
+            &:hover {
+              color: #00acee;
+            }
+          }
+          .fa-facebook-f {
+            cursor: pointer;
+            width: 3rem;
+            height: 2.2rem;
+            &:hover {
+              color: #3b5998;
+            }
+          }
+          .fa-instagram {
+            cursor: pointer;
+            width: 3rem;
+            height: 2.2rem;
+            &:hover {
+              color: #e4405f;
+            }
+          }
+        }
+      }
+      li {
+        list-style: none;
+        margin-bottom: 1rem;
+        .link,
+        a {
+          text-decoration: none;
+          color: rgba(18, 23, 30, 0.897);
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
   }
 }
