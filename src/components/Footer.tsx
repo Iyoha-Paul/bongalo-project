@@ -28,7 +28,9 @@ const Footer = () => {
                     placeholder="Enter Email Address"
                   />
                 </div>
-                <button className="form__input__email__btn">Subscribe</button>
+                <div>
+                  <button className="form__input__email__btn">Subscribe</button>
+                </div>
               </div>
             </div>
           </form>

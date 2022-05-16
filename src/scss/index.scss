@@ -111,6 +111,7 @@ footer {
     }
   }
   .btn--open-nav-menu {
+    // margin-right: 4rem;
     display: none;
     background-color: none;
 
@@ -131,6 +132,9 @@ footer {
     p {
       font-size: 3.6rem;
       color: white;
+      @include mobile {
+        font-size: 2rem;
+      }
     }
     &__logo {
       // height: 7.8rem;
@@ -182,7 +186,7 @@ footer {
   .btn--login {
     text-decoration: none;
     cursor: pointer;
-    margin-left: 5.8rem;
+    // margin-left: 5.8rem;
     padding: 2rem 4rem;
     background-color: white;
     border-radius: 15px;
@@ -290,7 +294,7 @@ footer {
   @include mobile {
     bottom: -35%;
     padding: 4rem 6rem;
-    width: calc($mobile - 10rem);
+    width: 40rem;
     // transform: translate(0%, 0%);
   }
   .form {
@@ -590,6 +594,9 @@ footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+    .globe__icon {
+      width: 100%;
+    }
   }
 }
 .footer {
@@ -630,6 +637,11 @@ footer {
         &__email {
           @include Flebo-parallel;
           gap: 0.8rem;
+          @include mobile {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+          }
           &__input-container {
             position: relative;
 
@@ -669,6 +681,7 @@ footer {
     @include mobile {
       grid-template-columns: 1fr 1fr;
       row-gap: 5rem;
+      column-gap: 0rem;
     }
 
     &__section {
