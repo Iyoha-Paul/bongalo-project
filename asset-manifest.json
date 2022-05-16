@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/bongalo/static/css/main.cc5a3c8f.css",
-    "main.js": "/bongalo/static/js/main.fa383d09.js",
-    "static/media/HeroImg.png": "/bongalo/static/media/HeroImg.eebb086293d118a5fcbf.png",
-    "static/media/YaondePicture.png": "/bongalo/static/media/YaondePicture.ed046e92908452c7a0a6.png",
-    "static/media/KigaliPicture.png": "/bongalo/static/media/KigaliPicture.fce65916f19548b5274d.png",
-    "static/media/DoulaPicture.png": "/bongalo/static/media/DoulaPicture.6a42dd79508f35a46179.png",
-    "static/media/ButarePicture.png": "/bongalo/static/media/ButarePicture.839942c32ea80bca04d8.png",
-    "static/media/eprience4.png": "/bongalo/static/media/eprience4.50f62f3ca73038b0e934.png",
-    "static/media/RubavuPicture.png": "/bongalo/static/media/RubavuPicture.07f297a23a8aefc0bbc5.png",
-    "static/media/eprience1.png": "/bongalo/static/media/eprience1.238063e2cdd22fcf51be.png",
-    "static/media/eprience3.png": "/bongalo/static/media/eprience3.e58d3246fa70f953c144.png",
-    "static/media/eprience2.png": "/bongalo/static/media/eprience2.f83e416f72aacd84648f.png",
-    "static/media/Place3.png": "/bongalo/static/media/Place3.3bd27b382c32991b9539.png",
-    "static/media/Place4.png": "/bongalo/static/media/Place4.4880f4bfc534278c6467.png",
-    "static/media/Place2.png": "/bongalo/static/media/Place2.ab1695ef04806d106318.png",
-    "static/media/Place1.png": "/bongalo/static/media/Place1.ad01c1d941370e103e33.png",
-    "index.html": "/bongalo/index.html",
-    "main.cc5a3c8f.css.map": "/bongalo/static/css/main.cc5a3c8f.css.map",
-    "main.fa383d09.js.map": "/bongalo/static/js/main.fa383d09.js.map"
+    "main.css": "/bongalo-project/static/css/main.cc5a3c8f.css",
+    "main.js": "/bongalo-project/static/js/main.3bacfa6f.js",
+    "static/media/HeroImg.png": "/bongalo-project/static/media/HeroImg.eebb086293d118a5fcbf.png",
+    "static/media/YaondePicture.png": "/bongalo-project/static/media/YaondePicture.ed046e92908452c7a0a6.png",
+    "static/media/KigaliPicture.png": "/bongalo-project/static/media/KigaliPicture.fce65916f19548b5274d.png",
+    "static/media/DoulaPicture.png": "/bongalo-project/static/media/DoulaPicture.6a42dd79508f35a46179.png",
+    "static/media/ButarePicture.png": "/bongalo-project/static/media/ButarePicture.839942c32ea80bca04d8.png",
+    "static/media/eprience4.png": "/bongalo-project/static/media/eprience4.50f62f3ca73038b0e934.png",
+    "static/media/RubavuPicture.png": "/bongalo-project/static/media/RubavuPicture.07f297a23a8aefc0bbc5.png",
+    "static/media/eprience1.png": "/bongalo-project/static/media/eprience1.238063e2cdd22fcf51be.png",
+    "static/media/eprience3.png": "/bongalo-project/static/media/eprience3.e58d3246fa70f953c144.png",
+    "static/media/eprience2.png": "/bongalo-project/static/media/eprience2.f83e416f72aacd84648f.png",
+    "static/media/Place3.png": "/bongalo-project/static/media/Place3.3bd27b382c32991b9539.png",
+    "static/media/Place4.png": "/bongalo-project/static/media/Place4.4880f4bfc534278c6467.png",
+    "static/media/Place2.png": "/bongalo-project/static/media/Place2.ab1695ef04806d106318.png",
+    "static/media/Place1.png": "/bongalo-project/static/media/Place1.ad01c1d941370e103e33.png",
+    "index.html": "/bongalo-project/index.html",
+    "main.cc5a3c8f.css.map": "/bongalo-project/static/css/main.cc5a3c8f.css.map",
+    "main.3bacfa6f.js.map": "/bongalo-project/static/js/main.3bacfa6f.js.map"
   },
   "entrypoints": [
     "static/css/main.cc5a3c8f.css",
-    "static/js/main.fa383d09.js"
+    "static/js/main.3bacfa6f.js"
   ]
 }
