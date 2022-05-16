@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bongalo-project/static/css/main.4fb4019d.css",
+    "main.css": "/bongalo-project/static/css/main.e1ee2139.css",
     "main.js": "/bongalo-project/static/js/main.88259fb4.js",
     "static/media/HeroImg.png": "/bongalo-project/static/media/HeroImg.eebb086293d118a5fcbf.png",
     "static/media/YaondePicture.png": "/bongalo-project/static/media/YaondePicture.ed046e92908452c7a0a6.png",
@@ -17,11 +17,11 @@
     "static/media/Place2.png": "/bongalo-project/static/media/Place2.ab1695ef04806d106318.png",
     "static/media/Place1.png": "/bongalo-project/static/media/Place1.ad01c1d941370e103e33.png",
     "index.html": "/bongalo-project/index.html",
-    "main.4fb4019d.css.map": "/bongalo-project/static/css/main.4fb4019d.css.map",
+    "main.e1ee2139.css.map": "/bongalo-project/static/css/main.e1ee2139.css.map",
     "main.88259fb4.js.map": "/bongalo-project/static/js/main.88259fb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fb4019d.css",
+    "static/css/main.e1ee2139.css",
     "static/js/main.88259fb4.js"
   ]
 }
