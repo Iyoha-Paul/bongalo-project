@@ -14,7 +14,9 @@ const FeaturedCities = () => {
           <div className="featured-cities__cities--col">
             <div className="img-container">
               <div className="img-container__design">&nbsp;</div>
-              <img src={KigaliPicture} alt="images" className="images" />
+              <div>
+                <img src={KigaliPicture} alt="images" className="images" />
+              </div>
               <div className="img-container__description">
                 <h3>Kigali</h3>
                 <p>25 properties</p>
@@ -22,7 +24,9 @@ const FeaturedCities = () => {
             </div>
             <div className="img-container">
               <div className="img-container__design">&nbsp;</div>
-              <img src={YaondePicture} alt="images" className="images" />
+              <div>
+                <img src={YaondePicture} alt="images" className="images" />
+              </div>
               <div className="img-container__description">
                 <h3>Yaounde</h3>
                 <p>15 properties</p>

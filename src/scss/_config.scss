@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
 // @import url("../fonts/GTWalsheimPro/stylesheet.css");
 @import url(//db.onlinewebfonts.com/c/0abeb2471faeb5269db428b9eac2075e?family=GT+Walsheim+Pro+Regular);
@@ -8,8 +8,9 @@ $secondary-color: #495057;
 $text-color: rgba(18, 23, 30, 0.654531);
 $desktop-view: 1440px;
 $mobile-view: 500px;
+$mobile: 500px;
 @mixin mobile {
-  @media (max-width: $mobile-view) {
+  @media (max-width: $mobile) {
     @content;
   }
 }
@@ -23,7 +24,7 @@ $mobile-view: 500px;
 html {
   font-size: 62.5%;
   @include mobile {
-    font-size: 40%;
+    font-size: 59%;
   }
 }
 @mixin transition-ease {

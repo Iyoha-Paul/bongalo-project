@@ -82,9 +82,13 @@ const Footer = () => {
           </div>
           <div className="footer__info__section">
             <h5>CONTACT</h5>
-            <ul>
-              <li>4th Floor, Fairview Building KG 622 St, Kigali, Rwanda</li>
-              <li>6th Floor CamCull Building Comm Ave, Bamenda, Cameroon</li>
+            <ul className="">
+              <li className="address">
+                4th Floor, Fairview Building KG 622 St, Kigali, Rwanda
+              </li>
+              <li className=" ">
+                6th Floor CamCull Building Comm Ave, Bamenda, Cameroon
+              </li>
               <li>
                 <a href="mailto:info@bongalo.co">info@bongalo.co</a>
               </li>
@@ -110,12 +114,12 @@ const Footer = () => {
         </div>
         <div className="footer__copyright">
           <div className="footer__copyright__rights">
-            Copyright © 2021 Bongal.co. All rights reserved
+            Copyright <span>©</span> 2021 Bongal.co. All rights reserved
           </div>
           <div className="footer__copyright__payments">
-            <h5>PAYMENT METHODS</h5>
-            <img src={VISA} alt="images" className="images" />
+            <p>PAYMENT METHODS</p>
             <img src={Circles} alt="images" className="images" />
+            <img src={VISA} alt="images" className="images" />
           </div>
         </div>
       </div>
