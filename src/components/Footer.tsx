@@ -10,7 +10,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer__subscribe">
           <div className="footer__subscribe__name">
-            <img src={CompanyLogoBlue} alt="images" className="images" />
+            <div className="img-container">
+              <img src={CompanyLogoBlue} alt="images" className="images" />
+            </div>
             <h4>Bongalo</h4>
           </div>
           <form action="" className="form">

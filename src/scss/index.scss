@@ -294,7 +294,7 @@ footer {
   @include mobile {
     bottom: -35%;
     padding: 4rem 6rem;
-    width: 40rem;
+    width: 90vw;
     // transform: translate(0%, 0%);
   }
   .form {
@@ -314,7 +314,8 @@ footer {
         color: #000000;
       }
       &__select {
-        width: 24rem;
+        width: 100%;
+        // width: 24rem;
         border: none;
         color: #12171ea7;
         font-size: 2rem;
@@ -593,6 +594,7 @@ footer {
       margin: 3rem 0;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      column-gap: 3rem;
     }
     .globe__icon {
       width: 100%;
@@ -617,6 +619,14 @@ footer {
       @include Flebo-parallel;
       justify-content: flex-start;
       gap: 2.4rem;
+      .img-container {
+        @include mobile {
+          height: 8rem;
+        }
+        .images {
+          height: 100%;
+        }
+      }
       h4 {
         font-size: 3.6rem;
         color: rgba(18, 23, 30, 0.6545);
@@ -638,8 +648,9 @@ footer {
           @include Flebo-parallel;
           gap: 0.8rem;
           @include mobile {
-            flex-direction: column;
+            flex-direction: row;
             align-items: flex-start;
+            justify-content: space-between;
             gap: 1rem;
           }
           &__input-container {
