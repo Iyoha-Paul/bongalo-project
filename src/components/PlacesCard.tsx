@@ -5,7 +5,10 @@ import Place3 from "../img/Place3.png";
 import Place4 from "../img/Place4.png";
 import bed from "../img/bed.png";
 import shower from "../img/shower.png";
-
+import { settings } from "./MultiCarouselSettings";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 const PlacesCard = () => {
   const places = [
     {
@@ -42,12 +45,121 @@ const PlacesCard = () => {
       beds: "3",
       showers: "7",
     },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
+    {
+      placeThumbnail: Place4,
+      name: `SCI Shalismi `,
+      price: "$120",
+      description: "Room",
+      beds: "3",
+      showers: "7",
+    },
   ];
   return (
-    <div className="featured-place">
-      <button className="btn ">
-        <i className="fa-solid fa-chevron-right"></i>
-      </button>
+    <Slider {...settings} className="featured-place">
       {places.map((place) => (
         <div className="placecard">
           <img
@@ -79,7 +191,7 @@ const PlacesCard = () => {
           </div>
         </div>
       ))}
-    </div>
+    </Slider>
   );
 };
 

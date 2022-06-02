@@ -1,10 +1,13 @@
-import React from "react";
 import eprience1 from "../img/eprience1.png";
 import eprience2 from "../img/eprience2.png";
 import eprience3 from "../img/eprience3.png";
 import eprience4 from "../img/eprience4.png";
 import LocationBlack from "../img/LocationBlack.png";
-
+import React, { Component } from "react";
+import Slider from "react-slick";
+import { settings } from "./MultiCarouselSettings";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const ExperienceCard = () => {
   const experiences = [
     {
@@ -27,12 +30,103 @@ const ExperienceCard = () => {
       name: `Nirvana Heights `,
       location: "Gisozi , Kigali",
     },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
+    {
+      experienceThumbnail: eprience4,
+      name: `Nirvana Heights `,
+      location: "Gisozi , Kigali",
+    },
   ];
+
   return (
-    <div className="experience">
-      <button className="btn ">
+    <Slider className="experience" {...settings}>
+      {/* <button className="btn ">
         <i className="fa-solid fa-chevron-right"></i>
-      </button>
+      </button> */}
       {experiences.map((experience) => (
         <div className="experience__card">
           <img
@@ -53,7 +147,7 @@ const ExperienceCard = () => {
           </div>
         </div>
       ))}
-    </div>
+    </Slider>
   );
 };
 

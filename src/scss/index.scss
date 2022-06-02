@@ -147,22 +147,8 @@ footer {
   }
   nav {
     @include Flebo-parallel;
-    // align-items: stretch;
-    // @include mobile {
-    //   flex-direction: column;
-    // }
   }
-  // .active {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 10;
-  //   background-color: rgb(219, 0, 0);
-  //   display: block;
-  //   width: 80vw;
-  //   height: 100vh;
-  //   padding: 2rem 4rem;
-  // }
+
   &__links {
     @include mobile {
       display: none;
@@ -295,10 +281,11 @@ footer {
   background-color: #fff;
   width: calc($desktop-view - 10%);
   @include mobile {
+    width: calc($mobile-view - 20%);
+
     bottom: -35%;
     padding: 4rem 6rem;
-    width: 90vw;
-    // transform: translate(0%, 0%);
+    width: 80vw;
   }
   .form {
     display: flex;
@@ -428,13 +415,19 @@ footer {
   h2 {
     margin-bottom: 3rem;
   }
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    background-color: $primary-color;
+    // color: #000000;
+    border-radius: 50%;
+    transform: scale(2);
+    z-index: 300;
+  }
+
   .featured-place {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
     @include mobile {
-      overflow: auto;
-      gap: 3rem;
+      // overflow: auto;
+      // gap: 3rem;
     }
     .btn {
       cursor: pointer;
@@ -506,14 +499,32 @@ footer {
   h2 {
     margin-bottom: 3.4rem;
   }
-  .experience {
-    position: relative;
+  /* the slides */
+  .slick-slide {
+    // margin: 0 10px;
+  }
+  /* the parent */
+  .slick-list {
+    // margin: 0 10px;
+    // overflow: visible;
+  }
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    background-color: $primary-color;
+    // color: #000000;
+    border-radius: 50%;
+    transform: scale(2);
+    z-index: 100;
+  }
 
-    @include Flebo-parallel;
-    justify-content: space-between;
+  .experience {
+    // position: relative;
+
+    // @include Flebo-parallel;
+    // justify-content: space-between;
     @include mobile {
-      overflow: auto;
-      gap: 3rem;
+      // overflow: auto;
+      // gap: 3rem;
     }
     .btn {
       border: 1px solid rgba(62, 148, 254, 0.2);
@@ -538,6 +549,7 @@ footer {
       display: flex;
       gap: 1.3rem;
       flex-direction: column;
+      // margin-left: 5rem;
     }
     &__image {
       margin-bottom: 0.4rem;
