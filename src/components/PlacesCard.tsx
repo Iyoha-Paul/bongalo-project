@@ -6,8 +6,8 @@ import Place4 from "../img/Place4.png";
 import bed from "../img/bed.png";
 import shower from "../img/shower.png";
 import { settings } from "./MultiCarouselSettings";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Slider from "react-slick";
 const PlacesCard = () => {
   const places = [
@@ -45,128 +45,35 @@ const PlacesCard = () => {
       beds: "3",
       showers: "7",
     },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
-    {
-      placeThumbnail: Place4,
-      name: `SCI Shalismi `,
-      price: "$120",
-      description: "Room",
-      beds: "3",
-      showers: "7",
-    },
   ];
   return (
-    <Slider {...settings} className="featured-place">
+    <Carousel
+      className="featured-place"
+      swipeable={true}
+      draggable={false}
+      showDots={false}
+      responsive={settings}
+      ssr={true} // means to render carousel on server-side.
+      infinite={true}
+      autoPlay={false}
+      autoPlaySpeed={10000}
+      keyBoardControl={true}
+      customTransition="all 5.5"
+      transitionDuration={500}
+      containerClass="carousel-container"
+      // deviceType={this.props.deviceType}
+      dotListClass="custom-dot-list-style"
+      itemClass="carousel-item-padding-40-px"
+    >
       {places.map((place) => (
         <div className="placecard">
-          <img
-            src={place.placeThumbnail}
-            alt="images"
-            className="placecard__image"
-          />
+          <div className="cont">
+            <img
+              src={place.placeThumbnail}
+              alt="images"
+              className="placecard__image"
+            />
+          </div>
           <div className="placecard__description">
             <div>
               <h4>{place.name}</h4>
@@ -191,7 +98,7 @@ const PlacesCard = () => {
           </div>
         </div>
       ))}
-    </Slider>
+    </Carousel>
   );
 };
 

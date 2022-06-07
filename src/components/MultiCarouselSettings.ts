@@ -1,61 +1,22 @@
 export const settings = {
-  dots: false,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1300,
-      settings: {
-        slidesToShow: 3.5,
-        slidesToScroll: 3,
-        infinite: false,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        infinite: false,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 1070,
-      settings: {
-        slidesToShow: 2.5,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: false,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+  desktop1: {
+    breakpoint: { max: 3000, min: 1500 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  desktop2: {
+    breakpoint: { max: 1500, min: 1024 },
+    items: 2.5,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
 };

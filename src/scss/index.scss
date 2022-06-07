@@ -415,19 +415,36 @@ footer {
   h2 {
     margin-bottom: 3rem;
   }
-  .slick-arrow.slick-prev,
-  .slick-arrow.slick-next {
-    background-color: $primary-color;
-    // color: #000000;
-    border-radius: 50%;
-    transform: scale(2);
-    z-index: 300;
+  .customLeftArrow {
+    color: red;
   }
+  // .slick-arrow.slick-prev,
+  // .slick-arrow.slick-next {
+  //   background-color: $primary-color;
+  //   // color: #000000;
+  //   border-radius: 50%;
+  //   transform: scale(2);
+  //   z-index: 300;
+  // }
 
   .featured-place {
     @include mobile {
       // overflow: auto;
       // gap: 3rem;
+    }
+    .react-multiple-carousel__arrow {
+      border: 1px solid rgba(62, 148, 254, 0.2);
+
+      background: #fff;
+      &--left {
+        left: 0;
+      }
+      &--right {
+        right: 0;
+      }
+      &::before {
+        color: $primary-color;
+      }
     }
     .btn {
       cursor: pointer;
@@ -450,6 +467,7 @@ footer {
     .placecard {
       &__image {
         margin-bottom: 2rem;
+        width: 100%;
       }
       &__description {
         display: flex;
@@ -500,24 +518,22 @@ footer {
     margin-bottom: 3.4rem;
   }
   /* the slides */
-  .slick-slide {
-    // margin: 0 10px;
-  }
-  /* the parent */
-  .slick-list {
-    // margin: 0 10px;
-    // overflow: visible;
-  }
-  .slick-arrow.slick-prev,
-  .slick-arrow.slick-next {
-    background-color: $primary-color;
-    // color: #000000;
-    border-radius: 50%;
-    transform: scale(2);
-    z-index: 100;
-  }
 
   .experience {
+    .react-multiple-carousel__arrow {
+      border: 1px solid rgba(62, 148, 254, 0.2);
+
+      background: #fff;
+      &--left {
+        left: 0;
+      }
+      &--right {
+        right: 0;
+      }
+      &::before {
+        color: $primary-color;
+      }
+    }
     // position: relative;
 
     // @include Flebo-parallel;
@@ -550,7 +566,11 @@ footer {
       gap: 1.3rem;
       flex-direction: column;
       // margin-left: 5rem;
+      .cont {
+        padding-left: 8rem;
+      }
     }
+
     &__image {
       margin-bottom: 0.4rem;
     }
